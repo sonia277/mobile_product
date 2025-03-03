@@ -1,0 +1,52 @@
+Conditional Rendering:
+Conditional rendering in React means deciding what content to render based on certain conditions. This is usually done with if-else or a ternary operator.
+
+function Item(props) {
+  if (props.isPacked) {
+    return <li className="item">{props.name} ✅</li>;
+  }
+  return <li className="item">{props.name}</li>;
+}✅
+
+// Item Component:................Alternative Approach Destructuring:✨
+Destructuring is a JavaScript feature that allows you to directly assign values from an object to variables.
+function Item({ name, isPacked }) {
+
+  let packedMessage;
+
+  if (isPacked) {
+    packedMessage = '✅'; emojipediawebsite.....................
+  } else {
+    packedMessage = '';
+  }
+
+  return (
+    <li className="item">
+      {name} {packedMessage}
+    </li>
+  );
+}
+
+export default Item;
+..............................................................
+// Importing the Item component
+import Item from './Item';
+
+export default function PackingList() {
+  return (
+    <section>
+      <h1>Sally Ride's Packing List</h1>
+      <ul>
+        <Item name="Space suit" isPacked={true} />
+        <Item name="Helmet with a golden leaf" isPacked={true} />
+        <Item name="Photo of Tam" isPacked={false} />
+      </ul>
+    </section>
+  );
+}
+
+Task 1: Build a Login System
+Create a component called LoginStatus that receives a prop isLoggedIn (a boolean).
+If isLoggedIn is true, display the message: "Welcome back, User!" and show a green checkmark (✅) next to it.
+If isLoggedIn is false, display the message: "Please log in to continue" and show a red cross mark (❌).
+You can use the ternary operator or if-else statement for conditional rendering based on the isLoggedIn prop.
