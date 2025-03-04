@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mobile_product/static/css/main.80063bb2.css",
+    "main.js": "/mobile_product/static/js/main.b259e9a9.js",
+    "index.html": "/mobile_product/index.html",
+    "main.80063bb2.css.map": "/mobile_product/static/css/main.80063bb2.css.map",
+    "main.b259e9a9.js.map": "/mobile_product/static/js/main.b259e9a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80063bb2.css",
+    "static/js/main.b259e9a9.js"
+  ]
+}
